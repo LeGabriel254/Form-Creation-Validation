@@ -16,4 +16,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // Validation Variables
   var isValid = 'true';
-  let messages ='store validation error messages'
+ 
+  // Declare an array to store validation error messages
+let messages = [];
+
+// Example function to add a validation error message
+function addErrorMessage(message) {
+    messages.push(message);
+}
+
