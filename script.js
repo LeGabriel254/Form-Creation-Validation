@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // Validation Variables
   var isValid = 'true';
  
-  // Declare an array to store validation error messages
+// Declare an array to store validation error messages
 let messages = [];
 
 // Example function to add a validation error message
@@ -25,3 +25,25 @@ function addErrorMessage(message) {
     messages.push(message);
 }
 
+// Example validation check
+let isValid = true;
+if (username.length < 6) {
+    addErrorMessage("Username must be at least 6 characters long.");
+    isValid = false;
+}
+
+// Get the feedbackDiv element
+let feedbackDiv = document.getElementById("feedbackDiv");
+
+// Make feedbackDiv visible
+feedbackDiv.style.display = "block";
+
+if (isValid) {
+    // If isValid is true, display success message
+    feedbackDiv.textContent = "Registration successful!";
+    feedbackDiv.style.color = "#28a745";
+} else {
+    // If isValid is false, display error messages
+    feedbackDiv.innerHTML = messages.join("<br>");
+    feedbackDiv.style.color = "#dc3545";
+}
