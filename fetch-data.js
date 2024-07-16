@@ -11,7 +11,7 @@
  
    try {
     // Code that might throw an exception goes here
-    const response = await fetch('apiUrl');
+    const response = await fetch(apiUrl);
     const users = await response.json();
     // Display the users
   } 
@@ -31,6 +31,6 @@ users.forEach(user => {
 });
 dataContainer.appendChild(userList);
 
-// nvoke fetchUserData on DOMContentLoaded
+// Invoke fetchUserData on DOMContentLoaded
 document.addEventListener = ('DOMContentLoded',fetchUserData)
 }  
