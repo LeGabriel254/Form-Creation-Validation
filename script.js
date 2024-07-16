@@ -47,3 +47,13 @@ if (isValid) {
     feedbackDiv.innerHTML = messages.join("<br>");
     feedbackDiv.style.color = "#dc3545";
 }
+ 
+// validate password
+const passwordInput = document.getElementById('password');
+const passwordError = document.getElementById('passwordError')
+ let isValid = True;
+if(passwordInput.value.lenght < 8)
+{
+  passwordError.textContent = 'Password must be at least 8 characters long.';
+  isValid =false;
+}
