@@ -19,6 +19,7 @@
     // Code to run if there's an exception goes here
     console.error('Failed to load user data.', error);
   }
-
+//Clear loading message
+dataContainer.innerHTML ='';
  
 }  
