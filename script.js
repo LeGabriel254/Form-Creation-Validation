@@ -52,7 +52,7 @@ if (isValid) {
 const passwordInput = document.getElementById('password');
 const passwordError = document.getElementById('passwordError')
  let isValid = True;
-if(passwordInput.lenght < 8)
+if(passwordInput.length < 8)
 {
   passwordError.textContent = 'Password must be at least 8 characters long.';
   isValid =false;
