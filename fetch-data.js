@@ -30,5 +30,7 @@ users.forEach(user => {
   userlist.appendChild(listItem);
 });
 dataContainer.appendChild(userList);
- 
+
+// nvoke fetchUserData on DOMContentLoaded
+document.addEventListener = ('DOMContentLoded',fetchUserData)
 }  
