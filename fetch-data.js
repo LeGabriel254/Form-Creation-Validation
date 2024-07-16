@@ -21,5 +21,14 @@
   }
 //Clear loading message
 dataContainer.innerHTML ='';
+
+// Create and Append user list.
+const userlist = document.createElement('ul');
+users.forEach(user => {
+  const listItem = document.createElement('li')
+  listItem.textContent =user.name;
+  userlist.appendChild(listItem);
+});
+dataContainer.appendChild(userList);
  
 }  
