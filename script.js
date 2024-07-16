@@ -56,3 +56,12 @@ if(password.length < 8){
   addErrorMessage = ('Password must be at least 8 characters long.');
   isValid =false;
 }
+
+// validate email
+const emailInput = document.getElementById('email')
+const emailerror = document.getElementById('emailError')
+let isValid = True;
+if (!email.includes('@','.')) {
+addErrorMessage = ('Please enter a valid email address.');
+isValid = false;
+}
